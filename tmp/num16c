@@ -1,0 +1,7 @@
+users=`w -h | cut -c"14-15"`
+for x in $users
+do
+if(test $x==1) then
+echo `w | cut -d" " -f1`
+fi
+done

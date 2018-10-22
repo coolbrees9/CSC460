@@ -1,0 +1,11 @@
+#!/bin/bash
+#Colin O'Neal
+
+echo -n "The Turtle: "
+read cmd arg1 arg2 restofthem
+echo Your command was: $cmd
+echo You Typed $arg1 
+echo You typed $arg2
+echo You typed $restofthem
+echo
+echo all done

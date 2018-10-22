@@ -1,0 +1,6 @@
+what=`w -h $x | cut -c"65-90"`
+echo WHAT
+for x in $what
+do
+echo $x
+done

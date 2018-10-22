@@ -1,0 +1,6 @@
+
+user=`grep $1 /etc/passwd | cut -d":" -f1`
+for x in $user
+do
+printf "%-20s \n" "$x"
+done

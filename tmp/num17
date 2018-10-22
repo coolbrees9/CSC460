@@ -1,0 +1,6 @@
+while (test $# -gt 0)
+do
+	echo $# $*
+	shift
+	./num17 $* &
+done

@@ -1,0 +1,6 @@
+processes=`ps -ef | grep oneal_wc | cut -d" " -f2`
+
+for x in $processes
+do
+	kill -9 $x
+done

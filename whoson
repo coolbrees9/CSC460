@@ -1,0 +1,11 @@
+class=`grep GOBEARS /etc/passwd | cut -d":" -f1`
+echo Here are those from our class
+echo $class
+echo
+echo
+thoseon=`who | cut -d" " -f1` 
+echo Those logged on are...
+echo $thoseon
+
+echo You sent me $# arguments.
+echo The first one is $1

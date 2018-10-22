@@ -1,0 +1,6 @@
+name=`w | cut -d" " -f1`
+for x in $name
+do
+fullname=`grep $x /etc/passwd | cut -d":" -f5 | cut -d"," -f1`
+printf "%-20s \n" "$fullname"
+done

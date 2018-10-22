@@ -1,0 +1,7 @@
+procs=`ipcs | grep $1 | cut -d" " -f2`
+
+for x in $procs
+do
+  ipcrm -m $x
+  ipcrm -s $x
+done
